@@ -16,7 +16,7 @@
 </head>
 
 <body>
-  <h2>Role Expectation Radar (with Stage Headings + Descriptions)</h2>
+  <h2>Systems Engineering Role Expectation Radar</h2>
   <canvas id="roleRadar" width="800" height="800"></canvas>
 
   <script>
@@ -29,19 +29,19 @@
     ];
 
     const stageDetails = {
-      "Programming Ability": [
+      "Technical Ability": [
         "Adopts – Actively learns and adopts the technology and tools defined by the team.",
         "Specialises – Is the go-to person for one or more technologies and takes initiative to learn new ones.",
-        "Evangelises – Researches, creates proofs of concept and introduces new technologies to the team.",
+        "Advocates – Researches, creates proofs of concept and introduces new technologies to the team.",
         "Masters – Has very deep knowledge about the whole technology stack of the system.",
-        "Creates – Designs and creates new technologies that are widely used either by internal or external teams."
+        "Innovates – Designs and creates new technologies that are widely used either by internal or external teams."
       ],
-      "Critical Thinking": [
-        "Enhances – Successfully pushes new features and bug fixes to improve and extend the system.",
-        "Designs – Designs and implements medium to large size features while reducing the system’s tech debt.",
-        "Owns – Owns parts of the system architecture and is responsible for designing robust solutions.",
-        "Evolves – Evolves the architecture to support future requirements.",
-        "Leads – Leads the technical excellence of the system overall and oversees the architectural patterns and practices."
+      "Problem Solving": [
+        "Diagnoses – Understands and investigates problems thoroughly before solving them.",
+        "Designs – Proposes well-thought-out solutions with clear trade-offs and risks.",
+        "Owns – Takes full ownership of solving moderately complex technical problems.",
+        "Evolves – Leads solving of complex or undefined technical challenges across systems.",
+        "Leads – Elevates how the department approaches and solves engineering challenges."
       ],
       "Communication": [
         "Learns – Quickly learns from others and consistently steps up when it is required.",
@@ -50,7 +50,7 @@
         "Coordinates – Coordinates team members providing effective feedback and moderating discussions.",
         "Manages – Manages the team members’ career, expectations, engagement, performance and level of happiness."
       ],
-      "Initiative": [
+      "Ways of Working": [
         "Follows – Follows the team processes, delivering a consistent flow of work to production.",
         "Collaborates – Collaborates with team members, making sure everybody understands the benefits and tradeoffs of various processes.",
         "Challenges – Challenges the team processes, looking for ways to improve them. Makes suggestions for improvement.",
@@ -59,10 +59,10 @@
       ],
       "Product Thinking": [
         "Aware – Understands who the users are, what they’re trying to achieve, and why the product exists.",
-        "Curious – Actively seeks out user pain points and uncovers unmet needs.",
-        "Informed – Uses user insights and business goals to guide implementation and prioritization.",
-        "Strategic – Shapes what the team builds by identifying high-impact opportunities from user and market signals.",
-        "Visionary – Champions product thinking and defines long-term value through deep user and market understanding."
+        "Curious – Consistently considers the end-user when designing, building, and maintaining systems.",
+        "Informed – Uses user feedback, technical data, and business context to guide implementation decisions and prioritise work effectively.",
+        "Focused – Identifies high-impact engineering opportunities by analysing user needs, technical constraints and market trends, and aligns solutions to maximise value.",
+        "Driven – Champions engineering improvements that enhance user outcomes, anticipates long-term needs, and designs solutions with lasting product impact in mind."
       ]
     };
 
@@ -75,28 +75,28 @@
         datasets: [
           {
             label: 'Tech Lead',
-            data: [5, 5, 5, 5, 5],
+            data: [3, 5, 5, 3, 5],
             backgroundColor: 'rgba(255, 69, 0, 0.2)',
             borderColor: 'orangered',
             borderWidth: 2
           },
           {
             label: 'STL',
-            data: [4, 4, 4, 4, 3],
+            data: [4, 4, 4, 5, 4],
             backgroundColor: 'rgba(0, 128, 0, 0.2)',
             borderColor: 'green',
             borderWidth: 2
           },
           {
             label: 'Senior SE',
-            data: [3, 3, 3, 3, 2],
+            data: [5, 2, 3, 2, 3],
             backgroundColor: 'rgba(0, 0, 255, 0.2)',
             borderColor: 'blue',
             borderWidth: 2
           },
           {
             label: 'SE',
-            data: [2, 2, 2, 2, 1],
+            data: [2, 1, 2, 2, 2],
             backgroundColor: 'rgba(255, 0, 255, 0.2)',
             borderColor: 'magenta',
             borderWidth: 2
